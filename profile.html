@@ -90,7 +90,7 @@
       <div class="col-md-4">
       </div>
       <div class="col col-sm-1" align="left" style="text-align:center">
-        <p class="mt-2" style="margin-right: 23px; font-size: 25px; margin-right: -190px; margin-left: -470px;">MOBILE:
+        <p class="mt-2" style="margin-right: 23px; font-size: 25px; margin-right: -190px; margin-left: -550px;">MOBILE:
         </p>
         <p class="pl-3" style="margin-top: -35px;
           font-size: 23px;
@@ -108,7 +108,7 @@
       <div class="col-md-4">
       </div>
       <div class="col col-sm-1" align="left" style="text-align:center">
-        <p class="mt-2" style="margin-right: 30px; font-size: 25px; margin-right: -190px; margin-left: -470px;">PHONE:
+        <p class="mt-2" style="margin-right: 30px; font-size: 25px; margin-right: -190px; margin-left: -550px;">PHONE:
         </p>
         <p class="pl-3" style="margin-top: -35px;
           font-size: 23px;
@@ -122,12 +122,12 @@
       <div class="col-md-4">
       </div>
       <div class="col col-sm-1" align="left" style="text-align:center">
-        <p class="mt-2" style="margin-right: 30px; font-size: 25px;  margin-right: -200px; margin-left: -485px;">EMAIL:
+        <p class="mt-2" style="margin-right: 30px; font-size: 25px;  margin-right: -200px; margin-left: -550px;">EMAIL:
         </p>
         <p class="pl-3" style="margin-top: -37px;
         font-size: 23px;
           margin-left: -148px;
-          margin-right: -215px;">{{ employee.email }}
+          margin-right: -135px;">{{ employee.email }}
         </p>
       </div>
     </div>
@@ -174,29 +174,35 @@
 </div>
 
 {% endif %}
+<!-- style="background-color: #4472c4;
+          border-color: #9d9d9d;
+          width: 150px;
+          text-align: center;
+          padding-bottom: 5px;
+          margin-bottom: 0px;
+          margin-left: -100px;
+          margin-top: 40px;"  -->
+
+          <!-- style="background-color: #9d9d9d;
+          border-color: #9d9d9d;
+          width: 140px;
+          text-align: center;
+          padding-bottom: 5px;
+          margin-bottom: 0px;
+          margin-left: -20px;
+          margin-top: 40px;" -->
 
 <div class="row" align="center">
   <div class="col col-md-12">
     <div class="mt-3">
-      <button style="background-color: #4472c4;
-      border-color: #9d9d9d;
-      width: 150px;
-      text-align: center;
-      padding-bottom: 5px;
-      margin-bottom: 0px;
-      margin-left: -100px;
-      margin-top: 40px;" name="submit"
-        class="action_btn submit" type="submit" value="Update" onclick="openNav()"><i class="material-icons">create</i>&nbsp;Update</button>
-      <button style="background-color: #9d9d9d;
-      border-color: #9d9d9d;
-      width: 140px;
-      text-align: center;
-      padding-bottom: 5px;
-      margin-bottom: 0px;
-      margin-left: -20px;
-      margin-top: 40px;"
-        name="submit" class="action_btn cancel" type="submit" value="save" onClick="javscript:SaveFile()"><i
-          class="material-icons  mr-2">save</i>Save</button>
+      <div class="action_btn submit"></div>
+        <button type="submit" value="Update" onclick="openNav()" style="background-color: #4472c4;
+        border-color: #4472c4;">
+          <i class="material-icons">create</i>&nbsp;Update</button>
+          <button type="submit" value="save" onClick="javscript:SaveFile()" style="background-color: #9d9d9d;
+          border-color: #9d9d9d;">
+           <i class="material-icons  mr-2">save</i>Save</button>
+      </div>
     </div>
   </div>
 </div>
